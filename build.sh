@@ -69,6 +69,8 @@ else
     else
         export CC="clang-11"
         export CXX="clang++-11"
+        export CXXFLAGS="-stdlib=libc++"
+        export LDFLAGS="-L/usr/lib/x86_64-linux-gnu -lc++"
     fi
 fi
 
